@@ -13,9 +13,11 @@
         <label for="fpassword">Enter your password:</label>
         <input type="password" id="fpassword" name="fpassword"><br><br>
 
-        <!-- progress bar -->
 
-        <input type="submit" value="Submit">
+        <!-- progress bar -->
+        <label for="file">Strength progress bar:</label>
+        <progress id="file" value="10" min="0" max="100">  </progress>
+
       </form>
      
 </body>
@@ -24,12 +26,11 @@
     
 <!-- User Requirements: -->
 <!-- 
-Given the page is rendered with the correct input field
-When the user changes a single character in the input field
-Then the progress bar should update its value -->
+Given the page is rendered with the correct input field When the user changes 
+A single character in the input field Then the progress bar should update its value -->
  
 <!-- Given the page is rendered with a progress bar that has a value range of 0-100
-When the user inputs a password
+When the user inputs a password 
 Then the progress bar value should be the number of characters multiplied by 5
  
 Given the user inputs a password
@@ -54,4 +55,4 @@ Then the progress bar should be green
  
 Given the user inputs a password
 When the password contains 12 characters or more
-Then the page should display the feedback “Grrrreat!” --> -->
+Then the page should display the feedback “Grrrreat!” -->
