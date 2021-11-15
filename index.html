@@ -8,22 +8,15 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <h1>How good is your password?</h1>
-    <label for="password">Enter your password:</label>
-    <input type="password" id="password" name="password" /><br /><br />
-    <label for="progressBar">Strength progress bar:</label>
-    <progress id="progressBar" class="classProgressBarColorRed" value="10" min="0" max="100"></progress>
-    <p> </p>
+    <section class="class_Section">
+        <h1>How good is your password?</h1>
+        <label for="password">Enter your password:</label>
+        <input type="password" id="password" name="password" /><br /><br />
+        <label for="progressBar">Strength progress bar:</label>
+        <progress id="progressBar" class="classProgressBarColorRed" value="0" min="0" max="100"></progress>
+        <p id="id_p" class="class_P"> </p>
+    </section>
     <script src="index.js"></script>
   </body>
 </html>
 
-<!-- User Requirements: -->
-
-<!-- 
-fewer than 8 characters  display the feedback “Should be longer” RED
-
-less than 12 characters - orange - “Pretty good”
-
-12 characters or more - green - feedback “Grrrreat!” 
--->
