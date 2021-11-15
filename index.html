@@ -5,17 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <!-- The page should contain a heading (How good is your password?), an input field, and a progress bar. -->
     <h1>How good is your password?</h1>
-    <form>
-      <label for="f-password">Enter your password:</label>
-      <input type="password" id="f-password" name="f-password" /><br /><br />
-      <label for="progressBar">Strength progress bar:</label>
-      <progress id="progressBar" value="10" min="0" max="100"></progress>
-    </form>
-    <section></section>
+    <label for="password">Enter your password:</label>
+    <input type="password" id="password" name="password" /><br /><br />
+    <label for="progressBar">Strength progress bar:</label>
+    <progress id="progressBar" class="classProgressBarColorRed" value="10" min="0" max="100"></progress>
+    <p> </p>
     <script src="index.js"></script>
   </body>
 </html>
@@ -23,26 +21,9 @@
 <!-- User Requirements: -->
 
 <!-- 
-Given the user inputs a password
-When the password contains fewer than 8 characters
-Then the progress bar should be red
- 
-Given the user inputs a password
-When the password contains fewer than 8 characters
-Then the page should display the feedback “Should be longer”
- 
-Given the user inputs a password
-When the password contains 8 characters or more, but less than 12 characters
-Then the progress bar should be orange
- 
-Given the user inputs a password
-When the password contains 8 characters or more, but less than 12 characters
-Then the page should display the feedback “Pretty good”
- 
-Given the user inputs a password
-When the password contains 12 characters or more
-Then the progress bar should be green
- 
-Given the user inputs a password
-When the password contains 12 characters or more
-Then the page should display the feedback “Grrrreat!” -->
+fewer than 8 characters  display the feedback “Should be longer” RED
+
+less than 12 characters - orange - “Pretty good”
+
+12 characters or more - green - feedback “Grrrreat!” 
+-->

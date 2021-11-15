@@ -1,0 +1,30 @@
+body{
+  --colorRed : red;
+  --colorOrange : orange;
+  --colorGreen : green;
+}
+
+
+progress {
+  -webkit-appearance: none;
+}
+
+::-webkit-progress-bar {
+  background-color: none;
+}
+
+::-webkit-progress-value {
+  background-color: var(--colorRed);
+}
+
+.classProgressBarColorRed::-webkit-progress-value{
+  background-color: var(--colorRed);
+}
+
+.classProgressBarColorOrange::-webkit-progress-value{
+  background-color: var(--colorOrange);
+}
+
+.classProgressBarColorGreen::-webkit-progress-value{
+  background-color: var(--colorGreen);
+}
